@@ -13,7 +13,7 @@ import android.view.View;
  * activity 四种启动模式：standard，singleTop，singleTask，singleInstance，后三种重用实例时都会走onNewIntent
  *
  * activity 在设置了singleTask时，如果设置了taskAffinity，则优先查找taskAffinity相同的task栈；
- * 否则谁启动activity，activity就在谁所在的task里
+ * 否则谁启动activity，activity就在谁所在的task里(不准确)
  *
  *
  // 清除目标Activity上方的Activity(如果目标activity是standard的启动模式且启动时intent里没有设置FLAG_ACTIVITY_SINGLE_TOP这个flag，那么栈里的目标activity也会被finish掉，重新创建一个实例)
